@@ -9,21 +9,6 @@ Features
 - Robust Error Handling: Basic error handling and data validation.
 - In-Memory Database: Uses H2 for quick setup and testing.
 
- Setup Instructions
-1. Clone the Repository:
-   git clone https://github.com/yourusername/health-monitor.git
-   cd health-monitor
-   
-2. Build the Project:
-   mvn clean install
-
-3. Run the Application:
-   mvn spring-boot:run
-   
-5. Access the H2 Database Console (Optional):
-   - Open your browser at `http://localhost:8080/h2-console`
-   - Use the JDBC URL: `jdbc:h2:mem:healthdb`, username: `sa`, and leave the password empty.
-
 Assumptions and Design Decisions
 - Database: An H2 in-memory database is used for simplicity; it can be replaced with MySQL or PostgreSQL for production.
 - Authentication: Basic email and password matching is used for login without implementing advanced security protocols.
